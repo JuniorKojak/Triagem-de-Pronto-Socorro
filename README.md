@@ -139,3 +139,5 @@ Busca o próximo paciente na fila de acordo com as regras de prioridade e o marc
 * **Nota de Design:** Este endpoint foi implementado como `POST` para seguir as melhores práticas de APIs RESTful. Uma requisição `GET` deve ser segura e não alterar o estado dos dados no servidor. Como esta operação modifica o status do paciente de "AGUARDANDO" para "EM_ATENDIMENTO", o uso de `POST` é o semanticamente correto.
 * **Resposta de Sucesso (200 OK):** Retorna o objeto do paciente chamado, agora com o campo `"status": "EM_ATENDIMENTO"`.
 * **Resposta de Falha (404 Not Found):** Será retornada caso não haja médicos em plantão ou não haja pacientes na fila de espera.
+
+Projeto Triagem
